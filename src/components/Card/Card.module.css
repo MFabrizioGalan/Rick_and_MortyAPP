@@ -1,0 +1,231 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family:'lato', sans-serif;
+}
+
+body{
+    background-image: url(https://i.pinimg.com/originals/0a/eb/52/0aeb52af3cb13c91c0aead5aba52480f.jpg);
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+    margin-top:10px;
+    display: inline-block;
+    flex-wrap: wrap;
+
+}
+
+.carta{
+    width: 350px;
+    margin: 20px;
+    transition: 0.2s;
+
+}
+.carta:hover{
+    width: 400px;
+}
+.carta .cover{
+    width: 100%;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.carta .cover img{
+    width: 250px;
+    position: relative;
+    z-index: 1;
+    display: block;
+    margin: auto;
+    top: 40px;
+    transition: all 0.4s;
+    border-radius: 50%;
+    border: 10px;
+    border-color: aqua;
+}
+.carta:hover .cover img{
+    top: 0px;
+}
+
+.carta .fondo{
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    background-size: cover;
+    bottom: -80px;
+    left: 0;
+    border-radius: 20px;
+    transform: 0.3s;
+    background:rgb(7, 172, 20);
+}
+
+.carta:nth-of-type(1) .fondo{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqiSdMCwjONsjTyXIoPQKCRWns7BfZ_sTGUA&usqp=CAU);
+}
+.carta:hover .fondo{
+    bottom: -40px;
+}
+
+.carta .description{
+    background: rgba(255, 81, 0, 0.623);
+    margin-top: -10px;
+    padding: 20px;
+    border-radius: 0px 0px 20px 20px;
+    transition: 0.3s;
+    font-weight: 100;
+    color: white;
+}
+.carta:hover{
+    padding: 40px;
+}
+.carta .description h2{
+    margin-top: 10px;
+}
+
+.carta .description button{
+    padding: 10px 40px;
+    margin-top: 20px;
+    border: none;
+    background: #48f305;
+    color: rgb(255, 255, 255);
+    font-style: 14px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.3s;
+}
+.carta .description button:hover{
+    background: #ff6804;
+}
+
+.description{
+    font-size: 10px;
+
+} */
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Lato', sans-serif;
+}
+body{
+    *background: #f1faff;
+    background-image: url(https://i.pinimg.com/originals/0a/eb/52/0aeb52af3cb13c91c0aead5aba52480f.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+
+}
+.contenedor{
+    max-width: 1200px;
+    margin-top: 25px;
+    perspective: 1000px;
+    display: inline-block;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.cartaPadre{
+    margin: 40px;
+    perspective: 1000px;
+}
+.cartaPadre:hover .carta{
+    transform: rotateY(180deg);
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRtSqMaBkftj2cC_JsNcriYW0wp9SRlP-BJ8tB0AME&s);
+    background-position: center;
+    background-repeat:initial;
+    border-radius: 25px;
+}
+.cartaPadre:hover .carta img{
+    scale: 1.05;
+}
+.carta{
+    width: 350px;
+    height: 400px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 1s;
+}
+.cartaCara,
+.cartaSello {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0; 
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+}
+.cartaSello{
+    transform: rotateY(180deg);
+    *background: white;
+    border-radius: 20px;
+}
+.carta:nth-of-type(1) .cartaCara{
+    *background-image: url(https://www.todofondos.net/wp-content/uploads/fondo-de-pantalla-de-720x1280.-fondo-de-pantalla-de-rick-y-morty-169x300.jpg)
+}
+.cartaCara{
+    background-size: cover;
+    background-position: 0;
+    background: rgb(60, 255, 0);
+    border-radius: 10px;
+}
+.cartaCara img{
+    border-radius: 50%;
+    padding: 25px;
+    transform: translateZ(60px);
+    
+}
+.cartaCara h2{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 0px;
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    transform: translateZ(60px);
+}
+
+/* .bg{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rbga(0,0,0,0.5);
+    border-radius: 20px;
+} */
+.cartaSello h2{
+    padding: 16px;
+    text-align: center;
+    font-size: 24px;
+    transform: translateZ(60px);
+    color: rgb(224, 255, 196);
+    *text-decoration: underline;
+}
+
+.cartaSello button{
+    width: 40px;
+    height: 20px;
+    margin-top: 20px;
+    bottom: 5px;
+    color: white;
+    font-style:initial;
+    border: none;
+    border-radius: 5px;
+    *background:rgb(60, 255, 0);
+    background: rgb(3, 214, 133);
+}
+.cartaSello button:hover {
+    background:rgb(1, 255, 136);
+}

@@ -1,0 +1,40 @@
+.boton {
+    *position: relative;
+    *left: 950px;
+    padding: 0px;
+    width: 400px;
+    
+}
+
+
+
+
+.boton input{
+    width: 250px;
+    height: 30px;
+    padding: 2px;
+    margin:10px;
+    border-radius: 10px;
+    border: none;
+    background: rgba(223, 147, 223, 0.61);
+    transition: 0.3s;
+    cursor: pointer;
+
+}
+.boton input:hover{
+    width: 255px;
+    background: rgba(194, 126, 194, 0.856);
+
+}
+.boton button{
+    width: 60px;
+    height: 17px;
+    border: none;
+    border-radius: 5px;
+    background: rgb(223, 62, 4);
+}
+.boton button:hover{
+    background: orangered;
+    width: 61px;
+    height: 17px;
+}

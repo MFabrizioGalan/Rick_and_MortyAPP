@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Lato', sans-serif;
+}
+
+.container {
+    *background-image: url(https://images7.alphacoders.com/633/thumbbig-633262.webp);
+    background-image: url(https://images3.alphacoders.com/633/thumbbig-633288.webp);
+    background-repeat: repeat-x;
+    background-size: cover;
+    max-width:100%;
+    height: 700px;
+    
+}
+
+/* :root{
+    *color: rgb(255, 255, 255);
+    --skin: #ff837f;
+    --green:  rgb(0, 255, 34);
+    --negro: rgb(0, 0, 0);
+    --blanco: rgb(255, 255, 255);
+}
+.container{
+    background-color: var(--skin);
+    width: 1rem;
+    height: 1rem;
+    margin: 2rem auto;
+
+    box-shadow: 
+    1rem 0 var(--green),
+    2rem 0 var(--negro);
+    
+} */

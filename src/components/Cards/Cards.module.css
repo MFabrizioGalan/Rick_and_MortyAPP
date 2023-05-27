@@ -1,0 +1,9 @@
+.container{
+    background: color #0e171f;
+    
+    width: fit-content;
+    height: fit-content;
+    display: inline-block;
+    gap: 1rem;
+    flex-direction: row;
+}
